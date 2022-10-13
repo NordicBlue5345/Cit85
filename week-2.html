@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<title>n-th child css selectors</title>
+
+<style>
+
+    li:only-child {
+        background-color: navy;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main :nth-child(4) {
+        background-color: purple;
+        color: wheat;
+        font-style: italic;
+    }
+
+    .main :nth-child(2n+1) {
+        background-color: olivedrab;
+        font-size: medium;
+        font-style: italic;
+        margin-right: 25em;
+    }
+
+
+li:nth-child(2n) {
+    background-color: salmon;
+    color: white;
+    margin-right: 89em;
+    text-align: center;
+}
+
+li:nth-child(odd) {
+    background-color: green;
+    color: yellow;
+    margin-right: 89em;
+    text-align: center;
+}
+
+li:first-child {
+
+color: navy;
+background-color:grey;
+margin-right: 90em;
+text-align: center;
+}
+
+li:last-child {
+
+color: maroon;
+background-color: goldenrod;
+margin-right: 90em;
+text-align: center;
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+<main class="main">
+
+    <h1>This is a heading</h1>
+    <p>
+        <h2>nth-child</h2>
+        <h3>This is a unlisted list showing the css for nth-child First, Last, Even, Odd, Only child, and Child(an+b) </h3>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sit eaque voluptatibus omnis magni amet officia suscipit quisquam quas, delectus deleniti? 
+        Fugiat culpa aliquam nemo obcaecati deserunt, adipisci ducimus corrupti ut!
+<div>
+        <ul>
+            <li>First</li>
+            <li>Even</li>
+            <li>Odd</li>
+            <li>Even</li>
+            <li>Odd</li>
+            <li>Even</li>
+            <li>Odd</li>
+            <li>Even</li>
+            <li>Odd</li>
+            <li>Even</li>
+            <li>Odd</li>
+            <li>Even</li>
+            <li>Last</li>
+        </ul>
+</div>
+    </p>
+</main>
+
+
+
+
+</body>
