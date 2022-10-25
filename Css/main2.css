@@ -1,0 +1,22 @@
+body {
+    color: navy;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 36px;
+    }
+
+div p {
+    color:forestgreen
+    }
+
+div > p {
+    color: purple;
+    }
+
+div ~ p {
+    color: forestgreen;
+    }
+
+div + p {
+    color: maroon;
+    }
