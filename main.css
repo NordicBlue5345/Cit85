@@ -1,24 +1,10 @@
-body {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: navy;
-}
-
-p {
-    margin: 20px;
-}
-
-p::first-letter {
-    font-family: cursive;
-    font-size: 36px;
-    line-height: .5;
-}
-
-p::first-line {
-    font-family: cursive;
-    font-size: 20px;
-    line-height: .5;
-    color: darkcyan;
+div {
+    width: 19%;
+    height: 180px;
+    border-radius: 100%;
+    border: 3px ridge black;
+    background-color: yellow;
+    margin: 1px;
+    display: block;
+    float: left;
 }
