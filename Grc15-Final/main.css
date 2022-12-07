@@ -1,60 +1,83 @@
-html {
-    background-color: dodgerblue;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 219, 219);
 }
 
-body {
-    width: 85%;
-    height: 85em;
-    margin: 0 auto;
-    background-color: rgb(0, 40, 80);
-    border: 5px solid black;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 ul {
-  
-    margin-left: auto;
+    margin: 0;
     padding: 0;
-    list-style-type: none;
-    text-align: center;
-    overflow: hidden;
-    background-color: #18617E;
-    border: 5px dotted rgb(10, 160, 183);
-    font-style: italic;
-    font-family: "Lucida Handwriting", cursive;
-    font-size: 1.5em;
-  }
-  
-  li {
-    display: inline-block;
-  }
-  
-  li a, .dropbtn {
-    display: inline-block;
-    color: goldenrod;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+.dark {
+    padding: 15px;
+    background:#14546D;
+    color: rgb(0, 0, 0);
+    font-family:"Garamond";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dark {
+    padding: 15px;
+    background:#14546D;
+    color: rgb(0, 0, 0);
+    font-family:"Garamond";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* header **/
+header {
+    background: #570101;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(255, 144, 9) 3px solid;
+}
+
+header a {
+    color: rgb(5, 6, 7);
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(240, 146, 31);
   }
   
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: #14546D;
-  }
-  
-  li.dropdown {
+ header li.dropdown {
     display: inline-block;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #18617E;
+    background-color: #ff851b;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px;
     z-index: 1;
   }
   
       .dropdown-content a {
-    color: #d9a521;
+    color: #000000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -67,163 +90,326 @@ ul {
     display: block;
       }
 
-      img {
-        position: top 40%;
-        border-radius: 60%;
-        border: 4px solid #d9a521;
-        width: 30%;
-        height: 70%;
-        
-            }
+header #Home {
+    float: left;
+}
 
-      .header img {
-              float: left;
-            }
-            
-      .header h1 {
-              position: relative;
-              text-align: center;
-              top: 18px;
-              left: 10px;
-              font-family: Garamond, serif;; 
-              font-style: italic;
-              font-size: 5em;
-              color: #99cada;
-            }
+header #Home h1 {
+    margin: 0;
+}
 
-      h2 {
-              position: relative;
-              text-align: center;
-              font-size: 2em;
-              font-family: Garamond, serif;
-              color: #99cada;
+header nav {
+    float: right;
+    margin-top: 10px;
+}
 
-            }
+/* showcase **/
 
-      p {
-              position: relative;
-              font-size: 1.5em;
-              padding: 15px;
-              padding-left: 20px;
-              color: #99cada;
-            }
+#showcase {
+    min-height: 400px;
+    background:url(../Grc15-Final/img/background.jpg) no-repeat 0 -550px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-bottom: rgb(255, 144, 9) 3px solid;
+}
 
-    .cards {
-      margin: 5 auto;
-      max-width: 800px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      font-family: Garamond, serif;
-    }
+#showcase-two {
+    min-height: 250px;
+    background: url(/Grc15-Final/img/Ocean2.jpg) no-repeat 0 -20px;
+    background-color:#14546D;
+    background-position: 350px;
+    border-bottom: #ff851b 3px solid;
+    
+}
 
-    .card {
-      box-shadow: 0 0 3px darkblue (0 0 0 0.1);
-    }
+#showcase-three {
+    min-height: 150px;
+    background: url(/Grc15-Final/img/flowers.jpg) no-repeat 0 -550px;
+    background-color:#14546D;
+    background-position: 0px;
+    border-bottom: #ff851b 3px solid;
+    text-align: center;
+    font-size: 25px;
+}
 
-    .card-image {
-      width: 100%;
-      height: 70%;
-      display: block;
-      border-radius: 10%;
-    }
+#showcase-four {
 
-    .card-content {
-      line-height: 1.5;
-      font-size: 0.9em;
-      margin-bottom: -50px;
-      padding: 5px;
-    }
+}
 
-    .card-info {
-      padding-bottom: 100px;
-    }
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    font-family: "Garamond";
+    margin-bottom: 10px;
+}
 
-    .button {
-      margin-left: 30%;
-    }
+#showcase p {
+    font-size: 25px;
+}
 
-    a:link {
-      color: #99cada;
-    }
+/*border **/
 
-    a:hover {
-      color: #4ebdab;
-    }
+#border {
+    padding: 25px;
+    background: #570101;
+    border-bottom: #ff851b 3px solid;
+}
 
-    a:visited {
-      color: rgb(114, 155, 233);
-    }
+#border h1 {
+    font-family: "Garamond";
+    font-size: 40px;
+    text-align: center;
+}
 
-    .me {
-      float: right;
-      width: auto;
-      margin-right: 15px;
-      border-radius: 0;
-      border-color: #28a9dc;
-      border-style: double;
-      border-width: .5em;
-      max-height: 30em;
-      max-width: 60em;
+/* photo containers **/
 
-    }
+#boxes {
+    margin-top: 100px;
+}
 
-    .container {
-      background-color: rgb(84, 148, 204);
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin-left: 20px;
+}
 
-    }
+#boxes .box img {
+    width: 300px;
+}
 
-    .h2 {
-      position: relative;
-      text-align: center;
-      top: 18px;
-      left: 10px;
-      font-family: Garamond, serif;; 
-      font-style: italic;
-      font-size: 5em;
-      color: #99cada;
-    }
+#things {
+    text-align: center;
+}
 
-    .ul2 {
-      margin-right: 45%;
-      margin-left: 15%;
-      padding: 0;
-      list-style-type: none;
-      text-align: center;
-      overflow: hidden;
-      background-color: #18617E;
-      border: 5px dotted rgb(10, 160, 183);
-      font-style: italic;
-      font-family: "Lucida Handwriting", cursive;
-      font-size: 1.5em;
-    }
+.family {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-    .Stacey {
-      width: auto;
-      margin-left: 15px;
-      border-radius: 0;
-      border-color: #1ea9e0;
-      border-style: double;
-      border-width: .5em;
-      max-height: 30em;
-      max-width: 60em;
-      display: block;
-    }
+.family h3 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
-    .p2 {
-      text-align: right;
-      font-size: 1em;
-      color: #2db3e0;
-    }
+.pets h1 {
+    text-align: center;
+    font-size: 50px;
+}
 
-    .bravo {
-      width: auto;
-      margin-right: 15px;
-      border-radius: 0;
-      border-color: #1ea9e0;
-      border-style: double;
-      border-width: .5em;
-      max-height: 20em;
-      max-width: 30em;
-      display: block;
-    }
+/* sidebar **/
+
+
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: -650px;
+    margin-right: 10px;
+}
+
+aside#sidebar-two {
+    float: right;
+    width: 30%;
+    margin-top: -250px;
+    margin-right: 5%;
+}
+
+aside img {
+    width: 70%;
+}
+
+#me {
+    width: 25%;
+}
+
+#nick {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 25px;
+    border: #000000 4px solid;
+}
+
+#main p {
+    float: left;
+    width: 60;
+}
+
+.page-title {
+    text-align: center;
+}
+
+
+/* main-col **/
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+article#main-family h1 {
+    font-size: 30px;
+}
+
+/* facts **/
+
+#dark {
+    padding: 15px;
+    background:#637076;
+    color: rgb(0, 0, 0);
+    font-family:"Garamond";
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#fun {
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    margin-left: 0%;
+}
+
+#web {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#family {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: #14546D 5px solid;
+}
+
+article.facts {
+    width: 60%;
+}
+
+
+.facts h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.facts-two h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Garamond";
+}
+
+/* slideshow **/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+#slideshow-photos {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Garamond";
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+footer {
+    padding: 20px;
+    margin-top: 300px;
+    color: #000000;
+    background-color: #570101;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Garamond";
+
+}
+
+
+
+
