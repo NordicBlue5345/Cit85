@@ -1,0 +1,18 @@
+* {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 94, 255);
+    color: #fff;
+}
+
+#one {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    /* formatting */
+    background-color: rgb(103, 12, 71);
+}
