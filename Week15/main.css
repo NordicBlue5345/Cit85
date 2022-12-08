@@ -1,0 +1,39 @@
+div {
+    width: 500px;
+    height: 500px;
+    /* center text in div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* formatting */
+    background-color: rgba(3, 79, 193, 0.929);
+    border: 4px solid black;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: yellow;
+    border-radius: 50%;
+    animation-name: backgroundColorPalette;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+    }
+
+    @keyframes backgroundColorPalette {
+        0% {
+            background: #ee6055;
+        }
+        25% {
+            background: #60d394;
+        }
+        50% {
+            background: #aaf683;
+        }
+        75% {
+            background: #ffd97d;
+        }
+        100% {
+            background: #ff9b85;
+        }
+    }
+    
